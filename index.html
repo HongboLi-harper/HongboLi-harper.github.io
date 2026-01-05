@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="top-bar">
+        <div class="lang-switch">
+            <span class="active">EN</span> / <span>中</span>
+        </div>
+    </div>
+
+    <div class="container">
+
+        <section class="profile-section">
+            <div class="avatar-box">
+                <img src="images/photo.jpeg" alt="Avatar">
+            </div>
+            <div class="info-box">
+                <h2>Your Name</h2>
+                <div class="info-grid">
+                    <div class="info-item"><strong>Email</strong>example@university.edu</div>
+                    <div class="info-item"><strong>Address</strong>City, Country</div>
+                    <div class="info-item"><strong>School</strong>University of Technology</div>
+                    <div class="info-item"><strong>Phone</strong>+1 234 567 8900</div>
+                </div>
+                
+                <div class="social-icons">
+                    <a href="https://github.com/HongboLi-harper" target="_blank"><i class="fab fa-github"></i></a>
+                    <a href="https://www.instagram.com/harperlee123harperlee/" target="_blank"><i class="fab fa-instagram"></i></a>
+                    <a href="#" target="_blank"><i class="fas fa-book-reader"></i></a>
+                </div>
+            </div>
+        </section>
+
+        <h3 class="section-title">Education</h3>
+        <section class="education-list">
+            <div class="edu-item">
+                <h4>Ph.D. in Computer Science</h4>
+                <div class="edu-year">2023 - Present</div>
+                <p>University Name - Research focus on AI & Web Tech.</p>
+            </div>
+            <div class="edu-item">
+                <h4>B.S. in Software Engineering</h4>
+                <div class="edu-year">2019 - 2023</div>
+                <p>University Name - GPA: 3.9/4.0</p>
+            </div>
+        </section>
+
+        <h3 class="section-title">Showcase</h3>
+        <section class="interactive-section">
+            <div class="menu-column">
+                <div class="menu-btn" data-content="<h3>Publications</h3><ul><li>Paper A: Smart Web Design (2024)</li><li>Paper B: HCI Research (2023)</li></ul>">
+                    Publications
+                </div>
+                <div class="menu-btn" data-content="<h3>Patents</h3><p>1. A Method for Dynamic Web Rendering (Pending)</p>">
+                    Patents
+                </div>
+            </div>
+
+            <div class="display-center" id="display-area">
+                <p style="color: #888;">Hover over the options on the sides to see details.</p>
+            </div>
+
+            <div class="menu-column">
+                <div class="menu-btn" data-content="<h3>Honors & Awards</h3><p>🏆 Best Paper Award 2024<br>🥇 First Place in Hackathon</p>">
+                    Honors
+                </div>
+                <div class="menu-btn" data-content="<h3>Life Photos</h3><p>📷 [Photo Gallery Placeholder]<br>Hiking, Coding, Coffee.</p>">
+                    Life Photos
+                </div>
+            </div>
+        </section>
+
+    </div>
+
+    <script src="main.js"></script>
+</body>
+</html>
