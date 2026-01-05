@@ -1,41 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Portfolio</title>
-    
+
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-    
+
     <link rel="stylesheet" href="style.css">
+
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css"> -->
 </head>
+
 <body>
 
     <div class="top-bar">
         <div class="lang-switch">
-            <span class="active">EN</span> / <span>中</span>
+            <!-- <span class="active">EN</span> / <span>中</span> -->
+            <div class="motto">Everyday is a new day.</div>
         </div>
     </div>
 
     <div class="container">
-
         <section class="profile-section">
             <div class="avatar-box">
-                <img src="images/photo.jpeg" alt="Avatar">
+                <!-- <img src="images/photo.png" alt=""> -->
+                <img src="images/photo.png" alt="Avatar" onclick="window.open(this.src, '_blank')">
             </div>
             <div class="info-box">
-                <h2>Your Name</h2>
+                <h2>李泓波 | Hongbo Li</h2>
                 <div class="info-grid">
-                    <div class="info-item"><strong>Email</strong>example@university.edu</div>
-                    <div class="info-item"><strong>Address</strong>City, Country</div>
-                    <div class="info-item"><strong>School</strong>University of Technology</div>
-                    <div class="info-item"><strong>Phone</strong>+1 234 567 8900</div>
+                    <div class="info-item"><strong>School</strong>Beihang University</div>
+                    <div class="info-item"><strong>Address</strong>Beijing, China</div>
+                    <div class="info-item"><strong>Email1</strong>lihongbo123@buaa.edu.cn</div>
+                    <div class="info-item"><strong>Email2</strong>harperlee123harperlee@gmail.com</div>
                 </div>
-                
+
                 <div class="social-icons">
                     <a href="https://github.com/HongboLi-harper" target="_blank"><i class="fab fa-github"></i></a>
-                    <a href="https://www.instagram.com/harperlee123harperlee/" target="_blank"><i class="fab fa-instagram"></i></a>
-                    <a href="#" target="_blank"><i class="fas fa-book-reader"></i></a>
+                    <a href="https://www.instagram.com/harperlee123harperlee/" target="_blank"><i
+                            class="fab fa-instagram"></i></a>
+                    <a href="https://webofscience.clarivate.cn/wos/author/record/81175115" target="_blank"
+                        title="Web of Science">
+                        <img src="images/web of science.svg" alt=""
+                            style="width: 22px; height: 22px; vertical-align: middle; filter: brightness(0) invert(1);"></a>
                 </div>
             </div>
         </section>
@@ -43,39 +52,196 @@
         <h3 class="section-title">Education</h3>
         <section class="education-list">
             <div class="edu-item">
-                <h4>Ph.D. in Computer Science</h4>
+                <h4>M.Sc. in Transportation Engineering</h4>
                 <div class="edu-year">2023 - Present</div>
-                <p>University Name - Research focus on AI & Web Tech.</p>
+                <p>Beihang University
+                    <a href="https://ev.buaa.edu.cn/" target="_blank" title="University Official Site"
+                        style="margin-left: 5px; color: #aaa;">
+                        <i class="fas fa-external-link-alt" style="font-size: 0.8em;"></i>
+                    </a>
+                    <br>
+                    Research focus on Computer Vision
+                </p>
             </div>
+        </section>
+        <br>
+        <section class="education-list">
             <div class="edu-item">
-                <h4>B.S. in Software Engineering</h4>
-                <div class="edu-year">2019 - 2023</div>
-                <p>University Name - GPA: 3.9/4.0</p>
+                <h4>International Summer School</h4>
+                <div class="edu-year">AUG. 2025</div>
+                <p>UnternehmerTUM, Technical University of Munich
+                    <a href="https://www.unternehmertum.de/en" target="_blank" title="University Official Site"
+                        style="margin-left: 5px; color: #aaa;">
+                        <i class="fas fa-external-link-alt" style="font-size: 0.8em;"></i>
+                    </a>
+                </p>
+            </div>
+        </section>
+        <br>
+        <section class="education-list">
+            <div class="edu-item">
+                <h4>B.Sc. in Traffic Equipment and Control Engineering</h4>
+                <div class="edu-year">2018 - 2022</div>
+                <p>Beijing University of Technology
+                    <a href="https://english.bjut.edu.cn/" target="_blank" title="University Official Site"
+                        style="margin-left: 5px; color: #aaa;">
+                        <i class="fas fa-external-link-alt" style="font-size: 0.8em;"></i>
+                    </a>
+                </p>
             </div>
         </section>
 
+        <h3 class="section-title">Publications</h3>
+        <section class="pub-patent-wrapper">
+
+            <div class="achievement-column">
+                <h4>
+                    <!-- <i class="fas fa-file-alt"></i> -->
+                    Articles
+                </h4>
+
+                <div class="item-card">
+                    <!-- <span class="tag journal">Journal</span> -->
+                    <div class="links">
+                        <a href="https://ieeexplore.ieee.org/document/10896453"><i class="fas fa-link"></i>
+                            <h5>CsoOcc: An Occupancy Network for Train Forward Perception Based on Cascade Sparsity
+                                Octree</h5>
+                        </a>
+                    </div>
+                    <!-- <p class="authors"><strong>Your Name</strong>, et al.</p> -->
+                    <p class="venue">IEEE T-ITS</p>
+                </div>
+
+                <div class="item-card">
+                    <!-- <span class="tag journal">Journal</span> -->
+                    <div class="links">
+                        <a href="https://ieeexplore.ieee.org/document/10774340"><i class="fas fa-link"></i>
+                            <h5>Forward Long-distance 3D Reconstruction in Rail Transit Scenarios based on Occupancy
+                                Networks</h5>
+                        </a>
+                    </div>
+                    <!-- <p class="authors">Author A, <strong>Your Name</strong>.</p> -->
+                    <p class="venue">2024 IEEE 22nd International Conference on Industrial Informatics (INDIN)</p>
+                </div>
+            </div>
+
+            <div class="achievement-column">
+                <h4>
+                    <!-- <i class="fas fa-certificate"></i> -->
+                    Patents
+                </h4>
+
+                <div class="item-card">
+                    <!-- <span class="tag patent">Invention</span> -->
+                    <h5>A Closed-Loop Data Method for 3D Track Line Detection</h5>
+                    <!-- <p class="authors"><strong>Your Name</strong>, et al.</p> -->
+                    <p class="venue">CN117911972A</p>
+                    <div class="links">
+                        <a href="https://pss-system.cponline.cnipa.gov.cn/documents/detail?prevPageTit=changgui"><i
+                                class="fas fa-search"></i> Details</a>
+                    </div>
+                </div>
+
+                <div class="item-card">
+                    <!-- <span class="tag patent">Invention</span> -->
+                    <h5>A Deformable Attention-Based Method for Image De-raining</h5>
+                    <!-- <p class="authors"><strong>Your Name</strong>, et al.</p> -->
+                    <p class="venue">CN118587120A</p>
+                    <div class="links">
+                        <a href="https://pss-system.cponline.cnipa.gov.cn/documents/detail?prevPageTit=changgui"><i
+                                class="fas fa-search"></i> Details</a>
+                    </div>
+                </div>
+
+                <div class="item-card">
+                    <!-- <span class="tag patent">Invention</span> -->
+                    <h5>A Method and Device for Train Localization Correction Based on High-Definition Map Prior
+                        Trajectory</h5>
+                    <!-- <p class="authors"><strong>Your Name</strong>, et al.</p> -->
+                    <p class="venue">CN118124640A</p>
+                    <div class="links">
+                        <a href="https://pss-system.cponline.cnipa.gov.cn/documents/detail?prevPageTit=changgui"><i
+                                class="fas fa-search"></i> Details</a>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+        <!-- <h3 class="section-title">Publications</h3>
+        <section class="publication-list">
+
+            <div class="pub-item">
+                <div class="pub-tags">
+                    <span class="tag journal">Article</span>
+                </div>
+                <h4>Title of Your T-ITS Paper One</h4>
+                <p class="pub-authors"><strong>Your Name</strong>, Co-author A, Co-author B.</p>
+                <p class="pub-venue"><em>IEEE Transactions on Intelligent Transportation Systems (T-ITS)</em></p>
+            </div>
+
+            <div class="pub-item">
+                <div class="pub-tags">
+                    <span class="tag journal">Article</span>
+                </div>
+                <h4>Title of Your Sensors Journal Paper</h4>
+                <p class="pub-authors">Author A, <strong>Your Name (1st Student Author)</strong>, Author C.</p>
+                <p class="pub-venue"><em>IEEE Sensors Journal</em>, 2025</p>
+                <div class="pub-links">
+                    <a href="https://doi.org/xxx" target="_blank"><i class="fas fa-link"></i> DOI</a>
+                </div>
+            </div>
+
+            <div class="pub-item">
+                <div class="pub-tags">
+                    <span class="tag patent">Patent</span>
+                </div>
+                <h4>A Method for [Your Patent Technology Name]</h4>
+                <p class="pub-authors"><strong>Your Name</strong>, Advisor Name, etc.</p>
+                <p class="pub-venue">China Invention Patent, No. CN123456789A</p>
+                <div class="pub-links">
+                    <a href="你的专利查询链接" target="_blank"><i class="fas fa-certificate"></i> View Patent</a>
+                </div>
+            </div>
+
+        </section> -->
+
         <h3 class="section-title">Showcase</h3>
         <section class="interactive-section">
-            <div class="menu-column">
-                <div class="menu-btn" data-content="<h3>Publications</h3><ul><li>Paper A: Smart Web Design (2024)</li><li>Paper B: HCI Research (2023)</li></ul>">
+            <!-- <div class="menu-column">
+                <div class="menu-btn" data-content="<h3>Publications</h3>
+                    <ul>
+                        <li> CsoOcc: An Occupancy Network for Train Forward Perception Based on Cascade Sparsity Octree. IEEE Sensors Journal, 2025.</li>
+                        <li> Forward Long-distance 3D Reconstruction in Rail Transit Scenarios based on Occupancy Networks.  2024 IEEE 22nd International Conference on Industrial Informatics (INDIN), 2024.</li>
+                            
+                        </ul>">
                     Publications
                 </div>
-                <div class="menu-btn" data-content="<h3>Patents</h3><p>1. A Method for Dynamic Web Rendering (Pending)</p>">
+
+
+                <div class="menu-btn"
+                    data-content="<h3>Patents</h3><p>1. A Method for Dynamic Web Rendering (Pending)</p>">
                     Patents
                 </div>
-            </div>
+            </div> -->
 
-            <div class="display-center" id="display-area">
+            <!-- <div class="display-center" id="display-area">
                 <p style="color: #888;">Hover over the options on the sides to see details.</p>
-            </div>
+            </div> -->
 
             <div class="menu-column">
-                <div class="menu-btn" data-content="<h3>Honors & Awards</h3><p>🏆 Best Paper Award 2024<br>🥇 First Place in Hackathon</p>">
+                <div class="menu-btn"
+                    data-content="<h3>Honors & Awards</h3><p>🏆 Best Paper Award 2024<br>🥇 First Place in Hackathon</p>">
                     Honors
                 </div>
-                <div class="menu-btn" data-content="<h3>Life Photos</h3><p>📷 [Photo Gallery Placeholder]<br>Hiking, Coding, Coffee.</p>">
+                <div class="menu-btn"
+                    data-content="<h3>Life Photos</h3><p>📷 [Photo Gallery Placeholder]<br>Hiking, Coding, Coffee.</p>">
                     Life Photos
                 </div>
+            </div>
+
+                        <div class="display-center" id="display-area">
+                <p style="color: #888;">Hover over the options on the sides to see details.</p>
             </div>
         </section>
 
@@ -83,4 +249,5 @@
 
     <script src="main.js"></script>
 </body>
+
 </html>

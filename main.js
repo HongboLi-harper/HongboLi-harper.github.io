@@ -19,3 +19,12 @@ buttons.forEach(btn => {
         }, 100); 
     });
 });
+
+
+// document.querySelectorAll('.menu-btn-new').forEach(btn => {
+// const panel = btn.querySelector('.menu-panel')
+
+// btn.addEventListener('click', () => {
+//     panel.hidden = !panel.hidden
+// })
+// });
