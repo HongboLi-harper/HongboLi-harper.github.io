@@ -4,247 +4,449 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Portfolio</title>
-
+    <title>Hongbo Li's Portfolio</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-
     <link rel="stylesheet" href="style.css">
-
-    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css"> -->
 </head>
 
-<body>
 
+<body>
     <div class="top-bar">
         <div class="lang-switch">
-            <!-- <span class="active">EN</span> / <span>中</span> -->
-            <div class="motto">Everyday is a new day.</div>
+            <span id="btn-en" class="lang-btn active">EN</span>
+            <!-- temporarily annotated -->
+            <span class="separator">/</span>
+            <span id="btn-zh" class="lang-btn">中</span>
         </div>
     </div>
 
     <div class="container">
-        <section class="profile-section">
-            <div class="avatar-box">
-                <!-- <img src="images/photo.png" alt=""> -->
-                <img src="images/photo.png" alt="Avatar" onclick="window.open(this.src, '_blank')">
-            </div>
-            <div class="info-box">
-                <h2>李泓波 | Hongbo Li</h2>
-                <div class="info-grid">
-                    <div class="info-item"><strong>School</strong>Beihang University</div>
-                    <div class="info-item"><strong>Address</strong>Beijing, China</div>
-                    <div class="info-item"><strong>Email1</strong>lihongbo123@buaa.edu.cn</div>
-                    <div class="info-item"><strong>Email2</strong>harperlee123harperlee@gmail.com</div>
+        <div class="lang-en">
+
+
+            <section class="profile-section">
+                
+                <div class="avatar-box">
+                    <img src="images/photo.png" alt="Avatar" onclick="window.open(this.src, '_blank')">
                 </div>
 
-                <div class="social-icons">
-                    <a href="https://github.com/HongboLi-harper" target="_blank"><i class="fab fa-github"></i></a>
-                    <a href="https://www.instagram.com/harperlee123harperlee/" target="_blank"><i
-                            class="fab fa-instagram"></i></a>
-                    <a href="https://webofscience.clarivate.cn/wos/author/record/81175115" target="_blank"
-                        title="Web of Science">
-                        <img src="images/web of science.svg" alt=""
-                            style="width: 22px; height: 22px; vertical-align: middle; filter: brightness(0) invert(1);"></a>
+                <div class="info-box">
+                    <h2>李泓波 | Hongbo Li</h2>
+                    <div class="info-grid">
+                        <div class="info-item"><strong>Affiliation</strong>Beihang University</div>
+                        <div class="info-item"><strong>Address</strong>Beijing, China</div>
+                        <div class="info-item"><strong>Email1</strong>lihongbo123@buaa.edu.cn</div>
+                        <div class="info-item"><strong>Email2</strong>harperlee123harperlee@gmail.com</div>
+                    </div>
+
+                    <div class="social-icons">
+                        <a href="https://github.com/HongboLi-harper" target="_blank"><i class="fab fa-github"></i></a>
+                        <a href="https://www.instagram.com/harperlee123harperlee/" target="_blank"><i
+                                class="fab fa-instagram"></i></a>
+                        <a href="https://webofscience.clarivate.cn/wos/author/record/81175115" target="_blank"
+                            title="Web of Science">
+                            <img src="images/web of science.svg" alt=""
+                                style="width: 22px; height: 22px; vertical-align: middle; filter: brightness(0) invert(1);"></a>
+                    </div>
+
                 </div>
-            </div>
-        </section>
+            </section>
 
-        <h3 class="section-title">Education</h3>
-        <section class="education-list">
-            <div class="edu-item">
-                <h4>M.Sc. in Transportation Engineering</h4>
-                <div class="edu-year">2023 - Present</div>
-                <p>Beihang University
-                    <a href="https://ev.buaa.edu.cn/" target="_blank" title="University Official Site"
-                        style="margin-left: 5px; color: #aaa;">
-                        <i class="fas fa-external-link-alt" style="font-size: 0.8em;"></i>
-                    </a>
-                    <br>
-                    Research focus on Computer Vision
-                </p>
-            </div>
-        </section>
-        <br>
-        <section class="education-list">
-            <div class="edu-item">
-                <h4>International Summer School</h4>
-                <div class="edu-year">AUG. 2025</div>
-                <p>UnternehmerTUM, Technical University of Munich
-                    <a href="https://www.unternehmertum.de/en" target="_blank" title="University Official Site"
-                        style="margin-left: 5px; color: #aaa;">
-                        <i class="fas fa-external-link-alt" style="font-size: 0.8em;"></i>
-                    </a>
-                </p>
-            </div>
-        </section>
-        <br>
-        <section class="education-list">
-            <div class="edu-item">
-                <h4>B.Sc. in Traffic Equipment and Control Engineering</h4>
-                <div class="edu-year">2018 - 2022</div>
-                <p>Beijing University of Technology
-                    <a href="https://english.bjut.edu.cn/" target="_blank" title="University Official Site"
-                        style="margin-left: 5px; color: #aaa;">
-                        <i class="fas fa-external-link-alt" style="font-size: 0.8em;"></i>
-                    </a>
-                </p>
-            </div>
-        </section>
 
-        <h3 class="section-title">Publications</h3>
-        <section class="pub-patent-wrapper">
-
-            <div class="achievement-column">
-                <h4>
-                    <!-- <i class="fas fa-file-alt"></i> -->
-                    Articles
-                </h4>
-
-                <div class="item-card">
-                    <!-- <span class="tag journal">Journal</span> -->
-                    <div class="links">
-                        <a href="https://ieeexplore.ieee.org/document/10896453"><i class="fas fa-link"></i>
-                            <h5>CsoOcc: An Occupancy Network for Train Forward Perception Based on Cascade Sparsity
-                                Octree</h5>
+            <h3 class="section-title">Education</h3>
+            <section class="education-list">
+                <div class="edu-item">
+                    <h4>M.Sc. in Transportation Engineering</h4>
+                    <div class="edu-year">2023 - Present</div>
+                    <p>Beihang University
+                        <a href="https://ev.buaa.edu.cn/" target="_blank" title="University Official Site"
+                            style="margin-left: 5px; color: #aaa;">
+                            <i class="fas fa-external-link-alt" style="font-size: 0.8em;"></i>
                         </a>
-                    </div>
-                    <!-- <p class="authors"><strong>Your Name</strong>, et al.</p> -->
-                    <p class="venue">IEEE T-ITS</p>
+                        <br>
+                        Research focus on Computer Vision
+                    </p>
                 </div>
+            </section>
 
-                <div class="item-card">
-                    <!-- <span class="tag journal">Journal</span> -->
-                    <div class="links">
-                        <a href="https://ieeexplore.ieee.org/document/10774340"><i class="fas fa-link"></i>
-                            <h5>Forward Long-distance 3D Reconstruction in Rail Transit Scenarios based on Occupancy
-                                Networks</h5>
+            <br>
+
+            <section class="education-list">
+                <div class="edu-item">
+                    <h4>International Summer School</h4>
+                    <div class="edu-year">AUG. 2025</div>
+                    <p>UnternehmerTUM, Technical University of Munich
+                        <a href="https://www.unternehmertum.de/en" target="_blank" title="University Official Site"
+                            style="margin-left: 5px; color: #aaa;">
+                            <i class="fas fa-external-link-alt" style="font-size: 0.8em;"></i>
                         </a>
-                    </div>
-                    <!-- <p class="authors">Author A, <strong>Your Name</strong>.</p> -->
-                    <p class="venue">2024 IEEE 22nd International Conference on Industrial Informatics (INDIN)</p>
+                    </p>
                 </div>
-            </div>
+            </section>
 
-            <div class="achievement-column">
-                <h4>
-                    <!-- <i class="fas fa-certificate"></i> -->
-                    Patents
-                </h4>
+            <br>
 
-                <div class="item-card">
-                    <!-- <span class="tag patent">Invention</span> -->
-                    <h5>A Closed-Loop Data Method for 3D Track Line Detection</h5>
-                    <!-- <p class="authors"><strong>Your Name</strong>, et al.</p> -->
-                    <p class="venue">CN117911972A</p>
-                    <div class="links">
-                        <a href="https://pss-system.cponline.cnipa.gov.cn/documents/detail?prevPageTit=changgui"><i
-                                class="fas fa-search"></i> Details</a>
-                    </div>
+            <section class="education-list">
+                <div class="edu-item">
+                    <h4>B.Sc. in Traffic Equipment and Control Engineering</h4>
+                    <div class="edu-year">2018 - 2022</div>
+                    <p>Beijing University of Technology
+                        <a href="https://english.bjut.edu.cn/" target="_blank" title="University Official Site"
+                            style="margin-left: 5px; color: #aaa;">
+                            <i class="fas fa-external-link-alt" style="font-size: 0.8em;"></i>
+                        </a>
+                    </p>
                 </div>
+            </section>
 
-                <div class="item-card">
-                    <!-- <span class="tag patent">Invention</span> -->
-                    <h5>A Deformable Attention-Based Method for Image De-raining</h5>
-                    <!-- <p class="authors"><strong>Your Name</strong>, et al.</p> -->
-                    <p class="venue">CN118587120A</p>
-                    <div class="links">
-                        <a href="https://pss-system.cponline.cnipa.gov.cn/documents/detail?prevPageTit=changgui"><i
-                                class="fas fa-search"></i> Details</a>
+
+            <h3 class="section-title">Academic Research</h3>
+            <section class="research-showcase">
+
+                <div class="demo-container">
+                    <div class="demo-info">
+                        <h4>Anchor-based Network for Railway Track Extraction</h4>
+                        <p>3D railway track extraction from 2D images via anchor-based point detection networks.</p>
+                        <ul class="demo-features">
+                            <li><i class="fas fa-check-circle"></i> Vision-based</li>
+                            <li><i class="fas fa-check-circle"></i> Long distance (300m)</li>
+                        </ul>
                     </div>
-                </div>
-
-                <div class="item-card">
-                    <!-- <span class="tag patent">Invention</span> -->
-                    <h5>A Method and Device for Train Localization Correction Based on High-Definition Map Prior
-                        Trajectory</h5>
-                    <!-- <p class="authors"><strong>Your Name</strong>, et al.</p> -->
-                    <p class="venue">CN118124640A</p>
-                    <div class="links">
-                        <a href="https://pss-system.cponline.cnipa.gov.cn/documents/detail?prevPageTit=changgui"><i
-                                class="fas fa-search"></i> Details</a>
+                    <div class="demo-video">
+                        <video autoplay muted loop playsinline>
+                            <source src="videos/railway_track-watermark.mp4" type="video/mp4">
+                        </video>
                     </div>
                 </div>
-            </div>
 
-        </section>
-
-        <!-- <h3 class="section-title">Publications</h3>
-        <section class="publication-list">
-
-            <div class="pub-item">
-                <div class="pub-tags">
-                    <span class="tag journal">Article</span>
-                </div>
-                <h4>Title of Your T-ITS Paper One</h4>
-                <p class="pub-authors"><strong>Your Name</strong>, Co-author A, Co-author B.</p>
-                <p class="pub-venue"><em>IEEE Transactions on Intelligent Transportation Systems (T-ITS)</em></p>
-            </div>
-
-            <div class="pub-item">
-                <div class="pub-tags">
-                    <span class="tag journal">Article</span>
-                </div>
-                <h4>Title of Your Sensors Journal Paper</h4>
-                <p class="pub-authors">Author A, <strong>Your Name (1st Student Author)</strong>, Author C.</p>
-                <p class="pub-venue"><em>IEEE Sensors Journal</em>, 2025</p>
-                <div class="pub-links">
-                    <a href="https://doi.org/xxx" target="_blank"><i class="fas fa-link"></i> DOI</a>
-                </div>
-            </div>
-
-            <div class="pub-item">
-                <div class="pub-tags">
-                    <span class="tag patent">Patent</span>
-                </div>
-                <h4>A Method for [Your Patent Technology Name]</h4>
-                <p class="pub-authors"><strong>Your Name</strong>, Advisor Name, etc.</p>
-                <p class="pub-venue">China Invention Patent, No. CN123456789A</p>
-                <div class="pub-links">
-                    <a href="你的专利查询链接" target="_blank"><i class="fas fa-certificate"></i> View Patent</a>
-                </div>
-            </div>
-
-        </section> -->
-
-        <h3 class="section-title">Showcase</h3>
-        <section class="interactive-section">
-            <!-- <div class="menu-column">
-                <div class="menu-btn" data-content="<h3>Publications</h3>
-                    <ul>
-                        <li> CsoOcc: An Occupancy Network for Train Forward Perception Based on Cascade Sparsity Octree. IEEE Sensors Journal, 2025.</li>
-                        <li> Forward Long-distance 3D Reconstruction in Rail Transit Scenarios based on Occupancy Networks.  2024 IEEE 22nd International Conference on Industrial Informatics (INDIN), 2024.</li>
-                            
-                        </ul>">
-                    Publications
+                <div class="demo-container reverse">
+                    <div class="demo-info">
+                        <h4>Occupancy Network for Forward Environment Reconstruction</h4>
+                        <p>Reconstructing the forward 3D environment from 2D images using an Occupancy Network,
+                            predicting both occupancy and semantic labels.
+                        </p>
+                        <ul class="demo-features">
+                            <li><i class="fas fa-check-circle"></i> Vision-based</li>
+                            <li><i class="fas fa-check-circle"></i> Long distance (300m)</li>
+                        </ul>
+                    </div>
+                    <div class="demo-video">
+                        <video autoplay muted loop playsinline>
+                            <source src="videos/occ_prediction-watermark.mp4" type="video/mp4">
+                        </video>
+                    </div>
                 </div>
 
-
-                <div class="menu-btn"
-                    data-content="<h3>Patents</h3><p>1. A Method for Dynamic Web Rendering (Pending)</p>">
-                    Patents
+                <div class="demo-container">
+                    <div class="demo-info">
+                        <h4>Real-time Intrusion Detection System</h4>
+                        <p>Using occupancy predictions to detect intruders within the clearance envelope
+                            constructed from the extracted 3D railway tracks.
+                        </p>
+                    </div>
+                    <div class="demo-video">
+                        <video autoplay muted loop playsinline>
+                            <source src="videos/intrusion_detection-watermark.mp4" type="video/mp4">
+                        </video>
+                    </div>
                 </div>
-            </div> -->
+            </section>
 
-            <!-- <div class="display-center" id="display-area">
-                <p style="color: #888;">Hover over the options on the sides to see details.</p>
-            </div> -->
-<!-- 
-            <div class="menu-column">
-                <div class="menu-btn"
-                    data-content="<h3>Honors & Awards</h3><p>🏆 Best Paper Award 2024<br>🥇 First Place in Hackathon</p>">
-                    Honors
+
+            <h3 class="section-title">Publications</h3>
+            <section class="pub-patent-wrapper">
+
+                <div class="achievement-column">
+                    <h4>Articles</h4>
+
+                    <div class="item-card">
+                        <div class="links">
+                            <a href="https://ieeexplore.ieee.org/document/10896453"><i class="fas fa-link"></i>
+                                <h5>CsoOcc: An Occupancy Network for Train Forward Perception Based on Cascade Sparsity
+                                    Octree</h5>
+                            </a>
+                        </div>
+                        <p class="venue">IEEE T-ITS</p>
+                    </div>
+
+                    <div class="item-card">
+                        <div class="links">
+                            <a href="https://ieeexplore.ieee.org/document/10774340"><i class="fas fa-link"></i>
+                                <h5>Forward Long-distance 3D Reconstruction in Rail Transit Scenarios based on Occupancy
+                                    Networks</h5>
+                            </a>
+                        </div>
+                        <p class="venue">2024 IEEE 22nd International Conference on Industrial Informatics (INDIN)</p>
+                    </div>
                 </div>
-                <div class="menu-btn"
-                    data-content="<h3>Life Photos</h3><p>📷 [Photo Gallery Placeholder]<br>Hiking, Coding, Coffee.</p>">
-                    Life Photos
+
+                <div class="achievement-column">
+                    <h4>Patents</h4>
+
+                    <div class="item-card">
+                        <h5>A Closed-Loop Data Method for 3D Track Line Detection</h5>
+                        <p class="venue">CN117911972A</p>
+                        <div class="links">
+                            <a href="https://pss-system.cponline.cnipa.gov.cn/documents/detail?prevPageTit=changgui"><i
+                                    class="fas fa-search"></i> Details</a>
+                        </div>
+                    </div>
+
+                    <div class="item-card">
+                        <h5>A Deformable Attention-Based Method for Image De-raining</h5>
+                        <p class="venue">CN118587120A</p>
+                        <div class="links">
+                            <a href="https://pss-system.cponline.cnipa.gov.cn/documents/detail?prevPageTit=changgui"><i
+                                    class="fas fa-search"></i> Details</a>
+                        </div>
+                    </div>
+
+                    <div class="item-card">
+                        <h5>A Method and Device for Train Localization Correction Based on High-Definition Map Prior
+                            Trajectory</h5>
+                        <p class="venue">CN118124640B</p>
+                        <div class="links">
+                            <a href="https://pss-system.cponline.cnipa.gov.cn/documents/detail?prevPageTit=changgui"><i
+                                    class="fas fa-search"></i> Details</a>
+                        </div>
+                    </div>
                 </div>
-            </div> -->
+            </section>
 
-                        <div class="display-center" id="display-area">
-                <p style="color: #888;">Hover over the options on the sides to see details.</p>
-            </div>
-        </section>
 
+            <h3 class="section-title">Showcase</h3>
+            <section class="interactive-section">
+
+                <div class="menu-column">
+                    <div class="menu-btn" data-content="
+                        <h3 style='color:#007bff; margin-bottom:15px;'>Academic Activities</h3>
+                        <h4 style='margin-bottom:5px;'>Services</h4>
+                        <p>• Reviewer of IEEE T-ITS</p>
+                        <h4 style='margin-top:15px; margin-bottom:5px;'>Presentations</h4>
+                        <p>• IEEE 22nd International Conference on Industrial Informatics 2024 | Beijing, China, 2024</p>
+                        <p>• CCF Intelligent Transportation Systems Conference | Chongqing, China, 2025</p>">
+                        Academic Activities
+                    </div>
+
+                    <div class="menu-btn" data-content="
+                        <h3 style='color:#2ecc71; margin-bottom:15px;'>Social Activities</h3>
+                        <h4 style='margin-bottom:5px;'>Volunteer Experiences</h4>
+                        <p>• Monthly Donator, United Nations Children's Fund (UNICEF)</p>
+                        <p>• Registered Volunteer (Beijing)</p>
+                        <p>• Christmas Charity Bazaar 2025, German Embassy Beijing</p>">
+                        Social Activities
+                    </div>
+
+                    <div class="menu-btn" data-content="
+                        <h3 style='color:#e67e22; margin-bottom:15px;'>My Life</h3>
+                        <div class='life-gallery'>
+                            <img src='images/photo-gallery-1.JPG' class='life-photo' alt='Life 1'>
+                            <img src='images/photo-gallery-2.JPG' class='life-photo' alt='Life 2'>
+                            <img src='images/photo-gallery-3.JPG' class='life-photo' alt='Life 3'>
+                            <img src='images/photo-gallery-5.JPG' class='life-photo' alt='Life 4'>
+                            <img src='images/photo-gallery-4.JPG' class='life-photo' alt='Life 5'>
+                            <img src='images/photo-gallery-6.JPG' class='life-photo' alt='Life 6'>
+                        </div>">
+                        My Life
+                    </div>
+                </div>
+
+                <div class="display-center" id="display-area">
+                    <p style="color: #888; width: 100%; text-align: center;">
+                        Hover over the options on the left side to see details.
+                    </p>
+                </div>
+            </section>
+
+        </div>
+    </div>
+
+
+
+    <div class="container">
+        <div class="lang-zh">
+            <section class="profile-section">
+                <div class="avatar-box">
+                    <img src="images/photo.png" alt="Avatar" onclick="window.open(this.src, '_blank')">
+                </div>
+                <div class="info-box">
+                    <h2>李泓波</h2>
+                    <div class="info-grid">
+                        <div class="info-item"><strong>学校</strong>北京航空航天大学</div>
+                        <div class="info-item"><strong>地址</strong>中国，北京</div>
+                        <div class="info-item"><strong>邮箱1</strong>lihongbo123@buaa.edu.cn</div>
+                        <div class="info-item"><strong>邮箱2</strong>harperlee123harperlee@gmail.com</div>
+                    </div>
+
+                    <div class="social-icons">
+                        <a href="https://github.com/HongboLi-harper" target="_blank"><i class="fab fa-github"></i></a>
+                        <a href="https://webofscience.clarivate.cn/wos/author/record/81175115" target="_blank"
+                            title="Web of Science">
+                            <img src="images/web of science.svg" alt=""
+                                style="width: 22px; height: 22px; vertical-align: middle; filter: brightness(0) invert(1);"></a>
+                    </div>
+                </div>
+            </section>
+
+                        <h3 class="section-title">教育经历</h3>
+            <section class="education-list">
+                <div class="edu-item">
+                    <h4>硕士研究生，交通运输工程</h4>
+                    <div class="edu-year">2023至今</div>
+                    <p>北京航空航天大学
+                        <a href="https://ev.buaa.edu.cn/" target="_blank" title="University Official Site"
+                            style="margin-left: 5px; color: #aaa;">
+                            <i class="fas fa-external-link-alt" style="font-size: 0.8em;"></i>
+                        </a>
+                        <br>
+                        研究方向：计算机视觉
+                    </p>
+                </div>
+            </section>
+
+            <br>
+
+            <section class="education-list">
+                <div class="edu-item">
+                    <h4>暑期交流</h4>
+                    <div class="edu-year">2025.08</div>
+                    <p>慕尼黑工业大学
+                        <a href="https://www.unternehmertum.de/en" target="_blank" title="University Official Site"
+                            style="margin-left: 5px; color: #aaa;">
+                            <i class="fas fa-external-link-alt" style="font-size: 0.8em;"></i>
+                        </a>
+                    </p>
+                </div>
+            </section>
+
+            <br>
+
+            <section class="education-list">
+                <div class="edu-item">
+                    <h4>学士，交通设备与控制工程</h4>
+                    <div class="edu-year">2018 - 2022</div>
+                    <p>北京工业大学
+                        <a href="https://english.bjut.edu.cn/" target="_blank" title="University Official Site"
+                            style="margin-left: 5px; color: #aaa;">
+                            <i class="fas fa-external-link-alt" style="font-size: 0.8em;"></i>
+                        </a>
+                    </p>
+                </div>
+            </section>
+
+
+            <h3 class="section-title">学术研究</h3>
+            <section class="research-showcase">
+
+                <div class="demo-container">
+                    <div class="demo-info">
+                        <h4>三维轨道线检测</h4>
+                        <p>基于锚点检测网络的二维图像三维铁路轨道提取方法</p>
+                        <ul class="demo-features">
+                            <li><i class="fas fa-check-circle"></i> 基于视觉</li>
+                            <li><i class="fas fa-check-circle"></i> 长距离 (300米)</li>
+                        </ul>
+                    </div>
+                    <div class="demo-video">
+                        <video autoplay muted loop playsinline>
+                            <source src="videos/railway_track-watermark.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                </div>
+
+                <div class="demo-container reverse">
+                    <div class="demo-info">
+                        <h4>前向运行空间三维重建</h4>
+                        <p>利用占用网络对二维图像进行前方三维环境重建，实现空间占据与语义信息的联合预测
+                        </p>
+                        <ul class="demo-features">
+                            <li><i class="fas fa-check-circle"></i> 基于视觉</li>
+                            <li><i class="fas fa-check-circle"></i> 长距离 (300米)</li>
+                        </ul>
+                    </div>
+                    <div class="demo-video">
+                        <video autoplay muted loop playsinline>
+                            <source src="videos/occ_prediction-watermark.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                </div>
+
+                <div class="demo-container">
+                    <div class="demo-info">
+                        <h4>异物侵限检测系统</h4>
+                        <p>
+                            结合占用预测与三维铁路轨道提取结果，实现铁路限界包络内的入侵物检测
+                        </p>
+                    </div>
+                    <div class="demo-video">
+                        <video autoplay muted loop playsinline>
+                            <source src="videos/intrusion_detection-watermark.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                </div>
+            </section>
+
+
+            <h3 class="section-title">成果</h3>
+            <section class="pub-patent-wrapper">
+
+                <div class="achievement-column">
+                    <h4>论文</h4>
+
+                    <div class="item-card">
+                        <div class="links">
+                            <a href="https://ieeexplore.ieee.org/document/10896453"><i class="fas fa-link"></i>
+                                <h5>CsoOcc: An Occupancy Network for Train Forward Perception Based on Cascade Sparsity
+                                    Octree</h5>
+                            </a>
+                        </div>
+                        <p class="venue">IEEE T-ITS</p>
+                    </div>
+
+                    <div class="item-card">
+                        <div class="links">
+                            <a href="https://ieeexplore.ieee.org/document/10774340"><i class="fas fa-link"></i>
+                                <h5>Forward Long-distance 3D Reconstruction in Rail Transit Scenarios based on Occupancy
+                                    Networks</h5>
+                            </a>
+                        </div>
+                        <p class="venue">2024 IEEE 22nd International Conference on Industrial Informatics (INDIN)</p>
+                    </div>
+                </div>
+
+                <div class="achievement-column">
+                    <h4>专利</h4>
+
+                    <div class="item-card">
+                        <h5>一种三维轨道线检测的数据闭环方法</h5>
+                        <p class="venue">CN117911972A</p>
+                        <div class="links">
+                            <a href="https://pss-system.cponline.cnipa.gov.cn/documents/detail?prevPageTit=changgui"><i
+                                    class="fas fa-search"></i> 查看</a>
+                        </div>
+                    </div>
+
+                    <div class="item-card">
+                        <h5>一种基于可变形注意力机制的图像去雨方法</h5>
+                        <p class="venue">CN118587120A</p>
+                        <div class="links">
+                            <a href="https://pss-system.cponline.cnipa.gov.cn/documents/detail?prevPageTit=changgui"><i
+                                    class="fas fa-search"></i> 查看</a>
+                        </div>
+                    </div>
+
+                    <div class="item-card">
+                        <h5>一种基于高精度地图轨迹先验的列车定位修正方法和装置</h5>
+                        <p class="venue">CN118124640B</p>
+                        <div class="links">
+                            <a href="https://pss-system.cponline.cnipa.gov.cn/documents/detail?prevPageTit=changgui"><i
+                                    class="fas fa-search"></i> 查看</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+        </div>
     </div>
 
     <script src="main.js"></script>
